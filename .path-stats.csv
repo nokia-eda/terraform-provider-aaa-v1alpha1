@@ -1,0 +1,15 @@
+Path,Method,Schema,Model Name,Supported,Datasource,Resource
+/apps/aaa.eda.nokia.com,GET,AppGroup,app_group,true,true,false
+/apps/aaa.eda.nokia.com/v1alpha1,GET,ResourceList,resource_list,true,true,false
+/apps/aaa.eda.nokia.com/v1alpha1/_ui/{pathname},GET,UIResult,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups,DELETE,com.nokia.eda.aaa.v1alpha1.NodeGroupList,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups,GET,com.nokia.eda.aaa.v1alpha1.NodeGroupList,node_group_list,true,true,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups,POST,com.nokia.eda.aaa.v1alpha1.NodeGroup,node_group,true,false,true
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/_deleted,GET,com.nokia.eda.aaa.v1alpha1.NodeGroup_DeletedResources,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name},DELETE,Status,node_group,true,false,true
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name},GET,com.nokia.eda.aaa.v1alpha1.NodeGroup,node_group,true,true,true
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name},PATCH,Patch,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name},PUT,com.nokia.eda.aaa.v1alpha1.NodeGroup,node_group,true,false,true
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/nodegroups,GET,com.nokia.eda.aaa.v1alpha1.NodeGroupList,,false,false,false
