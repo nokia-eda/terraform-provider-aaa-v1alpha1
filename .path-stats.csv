@@ -11,5 +11,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name},PATCH,Patch,,false,false,false
 /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name},PUT,com.nokia.eda.aaa.v1alpha1.NodeGroup,node_group,true,false,true
 /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/aaa.eda.nokia.com/v1alpha1/nodegroups,GET,com.nokia.eda.aaa.v1alpha1.NodeGroupList,,false,false,false
