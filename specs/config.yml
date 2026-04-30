@@ -1,0 +1,38 @@
+provider:
+  name: aaa
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/aaa.eda.nokia.com
+      method: GET
+
+  node_group:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}
+      method: GET
+
+  node_group_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/aaa.eda.nokia.com/v1alpha1
+      method: GET
+
+resources:
+  node_group:
+    create:
+      path: /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups
+      method: POST
+    read:
+      path: /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}
+      method: GET
+    update:
+      path: /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}
+      method: PUT
+    delete:
+      path: /apps/aaa.eda.nokia.com/v1alpha1/namespaces/{namespace}/nodegroups/{name}
+      method: DELETE
